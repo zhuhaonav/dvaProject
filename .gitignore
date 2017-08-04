@@ -8,4 +8,6 @@
 
 # misc
 .DS_Store
+/.idea/
+.idea/
 npm-debug.log*
