@@ -11,7 +11,9 @@
       "extraBabelPlugins": [
         "transform-runtime",
         ["import", { "libraryName": "antd", "style": "css" }]
-      ]
+      ],
+      "publicPath": "/public/"
     }
-  }
+  },
+  "publicPath": "/public/"
 }
