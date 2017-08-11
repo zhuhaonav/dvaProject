@@ -1,9 +1,12 @@
 
 export default {
 
-  namespace: 'example',
+  namespace: 'app',
 
-  state: {},
+  state:
+  {
+    loginLoading:false
+  },
 
   subscriptions: {
     setup({ dispatch, history }) {  // eslint-disable-line
