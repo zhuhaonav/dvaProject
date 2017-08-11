@@ -12,8 +12,8 @@
         "transform-runtime",
         ["import", { "libraryName": "antd", "style": "css" }]
       ],
-      "publicPath": "/public/"
+      "publicPath": "staticFiles/"
     }
   },
-  "publicPath": "/public/"
+  "publicPath": "staticFiles/"
 }
