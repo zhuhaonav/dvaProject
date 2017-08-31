@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "roadhog server",
+    "start": "set HOST=10.101.56.15&&roadhog server",
     "build": "roadhog build"
   },
   "engines": {
