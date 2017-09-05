@@ -15,5 +15,6 @@
           ]
         }
   },
+  "disableCSSModules":"true",
   "publicPath": "staticFiles/"
 }

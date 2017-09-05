@@ -10,9 +10,22 @@ class Logins extends React.Component{
       e.preventDefault();
       this.props.form.validateFields((err, values) => {
         if (!err) {
-          console.log('Received values of form: ', values);
-          query(values);
-          //location.href = location.origin+'#/main'
+          query({
+            method:'POST',
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(values)
+          }).then((data) => {
+            return data.data;
+          }).then((data) => {
+            if(data.success){
+              location.href = location.origin+'#/main'
+            }
+            else{
+              //alert('Login Failed')
+            }
+          });
         }
       });
     }

@@ -8,8 +8,10 @@ function RouterConfig({ history }) {
   return (
     <Router history={history}>
       <Route path="/" component={Login} />
-      <Route path="/main" component={IndexPage} />
-      <Route path="/products" component={Products} />
+      <Route path="/main" component={IndexPage}>
+        <Route path="/main/products" component={Products} />
+        <Route path="/main/products" component={Products} />
+      </Route>
     </Router>
   );
 }
